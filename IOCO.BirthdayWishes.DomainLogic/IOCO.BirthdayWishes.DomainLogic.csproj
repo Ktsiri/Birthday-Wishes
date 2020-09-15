@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IOCO.BirthdayWishes.Common\IOCO.BirthdayWishes.Common.csproj" />
+    <ProjectReference Include="..\IOCO.BirthdayWishes.Contract\IOCO.BirthdayWishes.Contract.csproj" />
+    <ProjectReference Include="..\IOCO.BirthdayWishes.DomainObjects\IOCO.BirthdayWishes.DomainObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Retreivers\" />
+  </ItemGroup>
+
+</Project>
