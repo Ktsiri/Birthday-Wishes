@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.DomainObjects.Base;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.DomainObjects.Base;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.DomainObjects
+namespace BirthdayWishes.DomainObjects
 {
     public class MessageQueue : BaseDomainObject<Guid>
     {

@@ -1,14 +1,14 @@
-﻿using IOCO.BirthdayWishes.Contract.DomainLogic.Rules;
+﻿using BirthdayWishes.Contract.DomainLogic.Rules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.Dto;
 using FluentValidation;
 
-namespace IOCO.BirthdayWishes.DomainLogic.Rules
+namespace BirthdayWishes.DomainLogic.Rules
 {
     sealed class InternalValidator<TValidator, TObjectType> : IInternalValidator<TObjectType>
         where TValidator : AbstractValidator<TObjectType>

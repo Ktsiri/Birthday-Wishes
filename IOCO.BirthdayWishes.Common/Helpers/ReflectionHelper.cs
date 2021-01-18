@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.Common.Helpers
+namespace BirthdayWishes.Common.Helpers
 {
     public static class ReflectionHelper
     {

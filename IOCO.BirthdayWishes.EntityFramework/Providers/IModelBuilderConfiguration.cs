@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 
-namespace IOCO.BirthdayWishes.EntityFramework.Providers
+namespace BirthdayWishes.EntityFramework.Providers
 {
     interface IModelBuilderConfiguration
     {

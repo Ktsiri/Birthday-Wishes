@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IOCO.BirthdayWishes.Contract.DependencyInjection
+namespace BirthdayWishes.Contract.DependencyInjection
 {
     public interface IRegisterClass
     {

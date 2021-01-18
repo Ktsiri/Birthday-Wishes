@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.DomainObjects.Base
+namespace BirthdayWishes.DomainObjects.Base
 {
     public abstract class BaseLookupDomainObject<TIdentity> : BaseActiveDomainObject<TIdentity>
     {

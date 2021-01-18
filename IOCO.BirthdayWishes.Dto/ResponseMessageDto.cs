@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.Dto
+namespace BirthdayWishes.Dto
 {
     public class ResponseMessageDto
     {

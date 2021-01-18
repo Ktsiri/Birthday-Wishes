@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
+namespace BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
 {
     public interface IActionImplementation
     {

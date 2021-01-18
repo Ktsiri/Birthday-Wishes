@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.Contract;
-using IOCO.BirthdayWishes.Contract.Common;
-using IOCO.BirthdayWishes.Contract.DependencyInjection;
-using IOCO.BirthdayWishes.EntityFramework.DataContexts;
-using IOCO.BirthdayWishes.EntityFramework.Settings;
+using BirthdayWishes.Contract;
+using BirthdayWishes.Contract.Common;
+using BirthdayWishes.Contract.DependencyInjection;
+using BirthdayWishes.EntityFramework.DataContexts;
+using BirthdayWishes.EntityFramework.Settings;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IOCO.BirthdayWishes.EntityFramework
+namespace BirthdayWishes.EntityFramework
 {
     public class ConfigureEFModule : IConfigureDependency
     {

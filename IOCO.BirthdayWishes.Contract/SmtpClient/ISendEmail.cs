@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.Contract.SmtpClient
+namespace BirthdayWishes.Contract.SmtpClient
 {
     public interface ISendEmail
     {

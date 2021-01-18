@@ -1,17 +1,17 @@
-﻿using IOCO.BirthdayWishes.Contract.ApiClient.Requests;
+﻿using BirthdayWishes.Contract.ApiClient.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.ApiClient.Providers.Interface;
-using IOCO.BirthdayWishes.ApiClient.Settings;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.Common;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.ApiClient.Providers.Interface;
+using BirthdayWishes.ApiClient.Settings;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.Common;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.ApiClient.Requests
+namespace BirthdayWishes.ApiClient.Requests
 {
     [RegisterClassDependency(typeof(IEmployeeExclusionRequest))]
     sealed class EmployeeExclusionRequest : IEmployeeExclusionRequest

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
+namespace BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
 {
     public interface IActionRetriever
     {

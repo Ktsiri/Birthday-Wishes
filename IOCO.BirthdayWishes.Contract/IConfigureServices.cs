@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.Contract
+namespace BirthdayWishes.Contract
 {
     public interface IConfigureDependency
     {

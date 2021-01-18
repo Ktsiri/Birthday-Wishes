@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.Functions
+namespace BirthdayWishes.Contract.DomainLogic.Functions
 {
     public interface IAddMessageToQueue
     {

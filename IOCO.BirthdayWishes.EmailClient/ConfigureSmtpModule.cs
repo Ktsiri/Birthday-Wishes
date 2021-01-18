@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.Contract;
-using IOCO.BirthdayWishes.Contract.DependencyInjection;
-using IOCO.BirthdayWishes.SmtpClient.Settings;
+using BirthdayWishes.Contract;
+using BirthdayWishes.Contract.DependencyInjection;
+using BirthdayWishes.SmtpClient.Settings;
 
 namespace IOCO.BirthdayWishes.SmtpClient
 {

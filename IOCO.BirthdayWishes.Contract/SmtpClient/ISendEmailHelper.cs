@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IOCO.BirthdayWishes.Contract.SmtpClient
+namespace BirthdayWishes.Contract.SmtpClient
 {
     public interface ISendEmailHelper
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.EntityFramework.Providers;
+using BirthdayWishes.EntityFramework.Providers;
 using Microsoft.EntityFrameworkCore;
 
-namespace IOCO.BirthdayWishes.EntityFramework.Extensions
+namespace BirthdayWishes.EntityFramework.Extensions
 {
     static class ConfigurationExtensions
     {

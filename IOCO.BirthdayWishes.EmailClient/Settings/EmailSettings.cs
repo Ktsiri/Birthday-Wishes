@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.SmtpClient.Settings
+namespace BirthdayWishes.SmtpClient.Settings
 {
     public sealed class EmailSettings
     {

@@ -4,10 +4,10 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.ApiClient.Settings.RestSettings;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.ApiClient.Settings.RestSettings;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.ApiClient.Providers.Interface
+namespace BirthdayWishes.ApiClient.Providers.Interface
 {
     public interface IRestfulServiceAssistant
     {

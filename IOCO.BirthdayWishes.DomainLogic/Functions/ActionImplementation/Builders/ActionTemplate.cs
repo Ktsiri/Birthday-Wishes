@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
 {
     [RegisterClassDependency(typeof(IActionTemplate))]
     sealed class ActionTemplate : IActionTemplate

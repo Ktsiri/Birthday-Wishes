@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.Common;
-using IOCO.BirthdayWishes.Contract.SmtpClient;
-using IOCO.BirthdayWishes.Dto;
-using IOCO.BirthdayWishes.SmtpClient.Settings;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.Common;
+using BirthdayWishes.Contract.SmtpClient;
+using BirthdayWishes.Dto;
+using BirthdayWishes.SmtpClient.Settings;
 
-namespace IOCO.BirthdayWishes.SmtpClient.Email
+namespace BirthdayWishes.SmtpClient.Email
 {
     [RegisterClassDependency(typeof(ISendEmail))]
     sealed class SendEmail : ISendEmail

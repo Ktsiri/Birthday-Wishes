@@ -1,7 +1,7 @@
-﻿using IOCO.BirthdayWishes.Contract.Common;
+﻿using BirthdayWishes.Contract.Common;
 using Microsoft.Extensions.Options;
 
-namespace IOCO.BirthdayWishes.Common.Services
+namespace BirthdayWishes.Common.Services
 {
     public sealed class SettingsOptions<TSettings> : ISettings<TSettings>
         where TSettings : class, new()

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.SmtpClient;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.SmtpClient;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.SmtpClient.Helpers
+namespace BirthdayWishes.SmtpClient.Helpers
 {
     [RegisterClassDependency(typeof(ISendEmailHelper))]
     sealed class SendEmailHelper : ISendEmailHelper

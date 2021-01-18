@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.ApiClient.Settings;
-using IOCO.BirthdayWishes.ApiClient.Settings.RestSettings;
-using IOCO.BirthdayWishes.Contract;
-using IOCO.BirthdayWishes.Contract.DependencyInjection;
+using BirthdayWishes.ApiClient.Settings;
+using BirthdayWishes.ApiClient.Settings.RestSettings;
+using BirthdayWishes.Contract;
+using BirthdayWishes.Contract.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IOCO.BirthdayWishes.ApiClient
+namespace BirthdayWishes.ApiClient
 {
     public class ConfigureApiClientModule : IConfigureDependency
     {

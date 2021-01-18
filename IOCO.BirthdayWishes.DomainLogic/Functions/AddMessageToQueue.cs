@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Converters;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Functions;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Retreivers;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.Common.Converters;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.DomainLogic.Functions;
+using BirthdayWishes.Contract.DomainLogic.Retreivers;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.DomainLogic.Functions
+namespace BirthdayWishes.DomainLogic.Functions
 {
     [RegisterClassDependency(typeof(IAddMessageToQueue))]
     sealed class AddMessageToQueue : IAddMessageToQueue

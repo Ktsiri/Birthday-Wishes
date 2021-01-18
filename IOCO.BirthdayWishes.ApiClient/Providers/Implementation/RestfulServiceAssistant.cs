@@ -7,13 +7,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
-using IOCO.BirthdayWishes.ApiClient.Providers.Interface;
-using IOCO.BirthdayWishes.ApiClient.Settings.RestSettings;
-using IOCO.BirthdayWishes.Common.Converters;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Dto;
+using BirthdayWishes.ApiClient.Providers.Interface;
+using BirthdayWishes.ApiClient.Settings.RestSettings;
+using BirthdayWishes.Common.Converters;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Dto;
 
-namespace IOCO.BirthdayWishes.ApiClient.Providers.Implementation
+namespace BirthdayWishes.ApiClient.Providers.Implementation
 {
     [RegisterClassDependency(typeof(IRestfulServiceAssistant))]
     sealed class RestfulServiceAssistant : IRestfulServiceAssistant

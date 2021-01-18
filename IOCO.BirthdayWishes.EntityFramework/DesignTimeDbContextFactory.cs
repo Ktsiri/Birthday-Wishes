@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using IOCO.BirthdayWishes.EntityFramework.DataContexts;
+using BirthdayWishes.EntityFramework.DataContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace IOCO.BirthdayWishes.EntityFramework
+namespace BirthdayWishes.EntityFramework
 {
     sealed class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<DomainContext>
     {

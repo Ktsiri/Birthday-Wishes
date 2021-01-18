@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.ApiClient.Settings.RestSettings;
+using BirthdayWishes.ApiClient.Settings.RestSettings;
 
-namespace IOCO.BirthdayWishes.ApiClient.Settings
+namespace BirthdayWishes.ApiClient.Settings
 {
     public class EohMcApiSettings 
     {

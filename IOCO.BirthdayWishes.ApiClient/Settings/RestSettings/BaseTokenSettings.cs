@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.ApiClient.Settings.RestSettings
+namespace BirthdayWishes.ApiClient.Settings.RestSettings
 {
     public class BaseTokenSettings
     {

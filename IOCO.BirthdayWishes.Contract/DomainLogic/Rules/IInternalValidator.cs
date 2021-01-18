@@ -1,11 +1,11 @@
-﻿using IOCO.BirthdayWishes.Dto;
+﻿using BirthdayWishes.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.Rules
+namespace BirthdayWishes.Contract.DomainLogic.Rules
 {
     public interface IInternalValidator<in T>
     {

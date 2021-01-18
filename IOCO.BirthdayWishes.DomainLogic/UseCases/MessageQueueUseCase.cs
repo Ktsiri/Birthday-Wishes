@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.ApiClient.Requests;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Retreivers;
-using IOCO.BirthdayWishes.Contract.DomainLogic.UseCases;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.ApiClient.Requests;
+using BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
+using BirthdayWishes.Contract.DomainLogic.Retreivers;
+using BirthdayWishes.Contract.DomainLogic.UseCases;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.DomainLogic.UseCases
+namespace BirthdayWishes.DomainLogic.UseCases
 {
     [RegisterClassDependency(typeof(IMessageQueueUseCase))]
     sealed class MessageQueueUseCase : IMessageQueueUseCase

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace IOCO.BirthdayWishes.Common.Converters
+namespace BirthdayWishes.Common.Converters
 {
     public static class JsonConverter
     {

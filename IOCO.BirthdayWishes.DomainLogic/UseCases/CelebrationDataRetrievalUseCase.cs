@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.ApiClient.Requests;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Functions;
-using IOCO.BirthdayWishes.Contract.DomainLogic.UseCases;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.ApiClient.Requests;
+using BirthdayWishes.Contract.DomainLogic.Functions;
+using BirthdayWishes.Contract.DomainLogic.UseCases;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.DomainLogic.UseCases
+namespace BirthdayWishes.DomainLogic.UseCases
 {
     [RegisterClassDependency(typeof(ICelebrationDataRetrievalUseCase))]
     sealed class CelebrationDataRetrievalUseCase : ICelebrationDataRetrievalUseCase

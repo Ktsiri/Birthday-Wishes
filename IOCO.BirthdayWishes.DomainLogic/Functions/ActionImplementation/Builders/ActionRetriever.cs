@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using IOCO.BirthdayWishes.Common.Helpers;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
+using BirthdayWishes.Common.Helpers;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
 
-namespace IOCO.BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
 {
     [RegisterClassDependency(typeof(IActionRetriever))]
     sealed class ActionRetriever : IActionRetriever

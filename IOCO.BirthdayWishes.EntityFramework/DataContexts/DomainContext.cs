@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IOCO.BirthdayWishes.Common.Helpers;
-using IOCO.BirthdayWishes.EntityFramework.Extensions;
-using IOCO.BirthdayWishes.EntityFramework.Providers;
+using BirthdayWishes.Common.Helpers;
+using BirthdayWishes.EntityFramework.Extensions;
+using BirthdayWishes.EntityFramework.Providers;
 using Microsoft.EntityFrameworkCore;
 
-namespace IOCO.BirthdayWishes.EntityFramework.DataContexts
+namespace BirthdayWishes.EntityFramework.DataContexts
 {
     sealed class DomainContext : DbContext
     {

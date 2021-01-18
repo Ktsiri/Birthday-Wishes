@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using IOCO.BirthdayWishes.Common.Helpers;
-using IOCO.BirthdayWishes.Contract;
-using IOCO.BirthdayWishes.Contract.DependencyInjection;
-using IOCO.BirthdayWishes.DependencyInjection.Services;
+using BirthdayWishes.Common.Helpers;
+using BirthdayWishes.Contract;
+using BirthdayWishes.Contract.DependencyInjection;
+using BirthdayWishes.DependencyInjection.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IOCO.BirthdayWishes.DependencyInjection
+namespace BirthdayWishes.DependencyInjection
 {
     public class DiBootstrapper
     {

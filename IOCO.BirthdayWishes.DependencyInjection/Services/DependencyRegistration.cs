@@ -1,15 +1,15 @@
-﻿using IOCO.BirthdayWishes.Common.Helpers;
-using IOCO.BirthdayWishes.Contract.DependencyInjection;
+﻿using BirthdayWishes.Common.Helpers;
+using BirthdayWishes.Contract.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.Common;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.Common;
 
-namespace IOCO.BirthdayWishes.DependencyInjection.Services
+namespace BirthdayWishes.DependencyInjection.Services
 {
     sealed class DependencyRegistration : IRegisterClass
     {

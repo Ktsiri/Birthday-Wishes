@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IOCO.BirthdayWishes.Common.Services
+namespace BirthdayWishes.Common.Services
 {
     /// <summary>
     /// Registers a class with its corresponding specified Service Type in the Dependency Injection Container

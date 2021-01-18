@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Common.Services;
-using IOCO.BirthdayWishes.Contract.DomainLogic.Retreivers;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto.Enumerations;
-using IOCO.BirthdayWishes.EntityFramework.DataContexts;
+using BirthdayWishes.Common.Services;
+using BirthdayWishes.Contract.DomainLogic.Retreivers;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.EntityFramework.DataContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace IOCO.BirthdayWishes.EntityFramework.Repositories
+namespace BirthdayWishes.EntityFramework.Repositories
 {
     [RegisterClassDependency(typeof(IMessageQueueRepository))]
     sealed class MessageQueueRepository : IMessageQueueRepository

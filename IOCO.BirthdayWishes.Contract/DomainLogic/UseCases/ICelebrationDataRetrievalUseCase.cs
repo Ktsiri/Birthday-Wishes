@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.UseCases
+namespace BirthdayWishes.Contract.DomainLogic.UseCases
 {
     public interface ICelebrationDataRetrievalUseCase
     {

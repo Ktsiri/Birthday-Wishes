@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.DomainObjects;
-using IOCO.BirthdayWishes.Dto.Enumerations;
+using BirthdayWishes.DomainObjects;
+using BirthdayWishes.Dto.Enumerations;
 
-namespace IOCO.BirthdayWishes.Contract.DomainLogic.Retreivers
+namespace BirthdayWishes.Contract.DomainLogic.Retreivers
 {
     public interface IMessageQueueRepository
     {

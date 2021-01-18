@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IOCO.BirthdayWishes.Dto.Enumerations
+namespace BirthdayWishes.Dto.Enumerations
 {
     public enum MessageStatusEnum : byte
     {
