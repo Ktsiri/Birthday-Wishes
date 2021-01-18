@@ -24,12 +24,12 @@ namespace BirthdayWishes.DependencyInjection
         public DiBootstrapper RegisterAllClasses(IRegisterClass registerClass)
         {
             // TODO:  fix this to load dynamically 
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.Common"));
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.DomainLogic"));
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.ApiClient"));
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.DependencyInjection"));
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.EntityFramework"));
-            registerClass.RegisterClasses(Assembly.Load("IOCO.BirthdayWishes.SmtpClient"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.Common"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.DomainLogic"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.ApiClient"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.DependencyInjection"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.EntityFramework"));
+            registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.SmtpClient"));
             //var referencedAssemblies = Assembly.Load("IOCO.BirthdayWishes.DependencyInjection").GetReferencedAssemblies();
 
             //var assemblyNames = (from assembly in referencedAssemblies

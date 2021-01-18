@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.SmtpClient",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DependencyInjection", "BirthdayWishes.DependencyInjection\BirthdayWishes.DependencyInjection.csproj", "{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{58377FE2-9B4A-4866-BA07-A66227ACA97C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,7 @@ Global
 		{CDAC321B-D8E0-481D-BE1B-7B1E4307F97F} = {CB65A585-085E-42CC-AADC-D92641B123F8}
 		{EBD8F77A-B279-4C41-AE6A-69B106BA8C29} = {8CC8A943-5441-4DDD-8FD2-CE107E7E7283}
 		{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221} = {8CC8A943-5441-4DDD-8FD2-CE107E7E7283}
+		{58377FE2-9B4A-4866-BA07-A66227ACA97C} = {6BCB1A55-92FF-448F-AF1B-DC026609E243}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D00030B-1DE0-4214-85ED-71A2601C9202}
