@@ -1,17 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using BirthdayWishes.ApiClient.Providers.Interface;
 using BirthdayWishes.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace IOCO.BirthdayWishes.Api
@@ -44,7 +37,7 @@ namespace IOCO.BirthdayWishes.Api
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "iOCO Birthday API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Birthday API", Version = "v1" });
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
         }
@@ -62,9 +55,9 @@ namespace IOCO.BirthdayWishes.Api
             app.UseSwaggerUI(c =>
             {
 #if (DEBUG)
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "iOCO Birthday API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Birthday API V1");
 #elif (RELEASE)
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "iOCO Birthday API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Birthday API V1");
 #endif
                 c.RoutePrefix = string.Empty;
             });
