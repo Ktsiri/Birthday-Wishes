@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Api", "IOCO.BirthdayWishes.Api\BirthdayWishes.Api.csproj", "{96CB870E-1362-4C55-B4DF-3498C5A6DBE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Api", "BirthdayWishes.Api\BirthdayWishes.Api.csproj", "{96CB870E-1362-4C55-B4DF-3498C5A6DBE6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CB65A585-085E-42CC-AADC-D92641B123F8}"
 EndProject
@@ -11,23 +11,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6BCB1A55-92FF-448F-AF1B-DC026609E243}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Common", "IOCO.BirthdayWishes.Common\BirthdayWishes.Common.csproj", "{675F6859-C582-4E94-B8B1-189C4E9D2AFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Common", "BirthdayWishes.Common\BirthdayWishes.Common.csproj", "{675F6859-C582-4E94-B8B1-189C4E9D2AFC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.ApiClient", "IOCO.BirthdayWishes.ApiClient\BirthdayWishes.ApiClient.csproj", "{F638599E-97C6-451C-A055-7281BFB7CAD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.ApiClient", "BirthdayWishes.ApiClient\BirthdayWishes.ApiClient.csproj", "{F638599E-97C6-451C-A055-7281BFB7CAD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Contract", "IOCO.BirthdayWishes.Contract\BirthdayWishes.Contract.csproj", "{F15A042F-8C9F-4761-9B82-8ECB768F90F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Contract", "BirthdayWishes.Contract\BirthdayWishes.Contract.csproj", "{F15A042F-8C9F-4761-9B82-8ECB768F90F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Dto", "IOCO.BirthdayWishes.Dto\BirthdayWishes.Dto.csproj", "{B6F356C2-22BF-424E-9DAE-6816843E6D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.Dto", "BirthdayWishes.Dto\BirthdayWishes.Dto.csproj", "{B6F356C2-22BF-424E-9DAE-6816843E6D1F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DomainLogic", "IOCO.BirthdayWishes.DomainLogic\BirthdayWishes.DomainLogic.csproj", "{B9BC2610-0E51-45EF-BDAB-1D7CF5A62D22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DomainLogic", "BirthdayWishes.DomainLogic\BirthdayWishes.DomainLogic.csproj", "{B9BC2610-0E51-45EF-BDAB-1D7CF5A62D22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.EntityFramework", "IOCO.BirthdayWishes.EntityFramework\BirthdayWishes.EntityFramework.csproj", "{9AA4C0D2-E941-456F-95CE-CF8BB14EC271}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.EntityFramework", "BirthdayWishes.EntityFramework\BirthdayWishes.EntityFramework.csproj", "{9AA4C0D2-E941-456F-95CE-CF8BB14EC271}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DomainObjects", "IOCO.BirthdayWishes.DomainObjects\BirthdayWishes.DomainObjects.csproj", "{CDAC321B-D8E0-481D-BE1B-7B1E4307F97F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DomainObjects", "BirthdayWishes.DomainObjects\BirthdayWishes.DomainObjects.csproj", "{CDAC321B-D8E0-481D-BE1B-7B1E4307F97F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.SmtpClient", "IOCO.BirthdayWishes.EmailClient\BirthdayWishes.SmtpClient.csproj", "{EBD8F77A-B279-4C41-AE6A-69B106BA8C29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.SmtpClient", "BirthdayWishes.EmailClient\BirthdayWishes.SmtpClient.csproj", "{EBD8F77A-B279-4C41-AE6A-69B106BA8C29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DependencyInjection", "IOCO.BirthdayWishes.DependencyInjection\BirthdayWishes.DependencyInjection.csproj", "{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DependencyInjection", "BirthdayWishes.DependencyInjection\BirthdayWishes.DependencyInjection.csproj", "{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

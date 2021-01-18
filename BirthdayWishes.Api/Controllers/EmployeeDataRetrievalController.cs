@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using IOCO.BirthdayWishes.Contract.DomainLogic.UseCases;
+using BirthdayWishes.Contract.DomainLogic.UseCases;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IOCO.BirthdayWishes.Api.Controllers
+namespace BirthdayWishes.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IOCO.BirthdayWishes.DependencyInjection\BirthdayWishes.DependencyInjection.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.DependencyInjection\BirthdayWishes.DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IOCO.BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
   </ItemGroup>
 
 </Project>

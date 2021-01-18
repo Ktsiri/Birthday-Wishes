@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IOCO.BirthdayWishes.Dto\BirthdayWishes.Dto.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.Dto\BirthdayWishes.Dto.csproj" />
   </ItemGroup>
 
 </Project>

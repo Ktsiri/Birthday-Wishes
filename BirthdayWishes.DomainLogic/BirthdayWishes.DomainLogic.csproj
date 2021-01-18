@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IOCO.BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
-    <ProjectReference Include="..\IOCO.BirthdayWishes.Contract\BirthdayWishes.Contract.csproj" />
-    <ProjectReference Include="..\IOCO.BirthdayWishes.DomainObjects\BirthdayWishes.DomainObjects.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.Contract\BirthdayWishes.Contract.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.DomainObjects\BirthdayWishes.DomainObjects.csproj" />
   </ItemGroup>
 
   <ItemGroup>
