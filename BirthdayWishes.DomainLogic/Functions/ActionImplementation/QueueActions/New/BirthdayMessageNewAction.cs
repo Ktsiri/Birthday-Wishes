@@ -10,16 +10,19 @@ using BirthdayWishes.DomainObjects;
 using BirthdayWishes.Dto;
 using BirthdayWishes.Dto.Enumerations;
 
-namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.QueueActions.New
 {
     [RegisterClassDependency(typeof(IActionImplementation))]
-    sealed class StartingWorkMessageTypeAction : IActionImplementation
+    sealed class BirthdayMessageNewAction : IActionImplementation
     {
         private readonly IActionTemplate _actionTemplate;
         private readonly ISendEmailHelper _sendEmailHelper;
-        public byte ActionId => (byte)MessageTypeEnum.StartingWork;
 
-        public StartingWorkMessageTypeAction(IActionTemplate actionTemplate, ISendEmailHelper sendEmailHelper)
+        public byte MessageStatusId => (byte)MessageStatusEnum.New;
+
+        public byte? MessageTypeId => (byte)MessageTypeEnum.Birthday;
+
+        public BirthdayMessageNewAction(IActionTemplate actionTemplate, ISendEmailHelper sendEmailHelper)
         {
             _actionTemplate = actionTemplate;
             _sendEmailHelper = sendEmailHelper;
@@ -33,13 +36,14 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
         {
             var employee = JsonConverter.ConvertFromJson<EmployeeDto>(messageQueue.SourceRawJson);
             // TODO: introduce a template
-            var message = $"Welcome to iOCO {employee.Name}, {employee.LastName}, we are so proud to have you on board";
+            var message = $"Happy birthday {employee.Name}, {employee.LastName}";
 
             var sendEmail = await _sendEmailHelper.SendEmailAsync("khomotso.tsiri@ioco.tech", message,
                 "Birthday Wishes", true, false);
 
             if (sendEmail)
             {
+                messageQueue.MessageStatus = MessageStatusEnum.Sent;
                 return new Tuple<ResponseMessageDto, MessageQueue>(new ResponseMessageDto
                 {
                     Success = true
@@ -47,6 +51,7 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
             }
             else
             {
+                messageQueue.MessageStatus = MessageStatusEnum.Failed;
                 return new Tuple<ResponseMessageDto, MessageQueue>(new ResponseMessageDto
                 {
                     Success = false,

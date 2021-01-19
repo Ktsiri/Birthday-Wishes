@@ -9,7 +9,8 @@ namespace BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
 {
     public interface IActionImplementation
     {
-        byte ActionId { get; }
+        byte MessageStatusId { get; }
+        byte? MessageTypeId { get; }
         Task<Tuple<ResponseMessageDto, MessageQueue>> PerformAction(MessageQueue messageQueue);
     }
 }

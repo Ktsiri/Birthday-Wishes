@@ -49,7 +49,7 @@ namespace BirthdayWishes.DomainLogic.UseCases
                         {
                             continue;
                         }
-                        var action = _actionRetriever.GetAction((byte)queue.MessageStatus);
+                        var action = _actionRetriever.GetAction((byte)queue.MessageStatus, (byte)queue.MessageType);
                         var actionResults = await action.PerformAction(queue);
 
                         if (actionResults.Item1.Success)

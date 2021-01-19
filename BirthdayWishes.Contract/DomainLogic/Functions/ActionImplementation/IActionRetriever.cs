@@ -6,6 +6,6 @@ namespace BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation
 {
     public interface IActionRetriever
     {
-        IActionImplementation GetAction(byte actionId);
+        IActionImplementation GetAction(byte messageStatusId, byte? messageTypeId);
     }
 }

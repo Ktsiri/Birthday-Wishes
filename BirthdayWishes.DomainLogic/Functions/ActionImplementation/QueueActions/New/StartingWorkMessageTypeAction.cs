@@ -10,16 +10,19 @@ using BirthdayWishes.DomainObjects;
 using BirthdayWishes.Dto;
 using BirthdayWishes.Dto.Enumerations;
 
-namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.QueueActions.New
 {
     [RegisterClassDependency(typeof(IActionImplementation))]
-    sealed class BirthdayMessageTypeAction : IActionImplementation
+    sealed class StartingWorkMessageTypeAction : IActionImplementation
     {
         private readonly IActionTemplate _actionTemplate;
         private readonly ISendEmailHelper _sendEmailHelper;
-        public byte ActionId => (byte)MessageTypeEnum.Birthday;
 
-        public BirthdayMessageTypeAction(IActionTemplate actionTemplate, ISendEmailHelper sendEmailHelper)
+        public byte MessageStatusId => (byte)MessageStatusEnum.New;
+
+        public byte? MessageTypeId => (byte)MessageTypeEnum.StartingWork;
+
+        public StartingWorkMessageTypeAction(IActionTemplate actionTemplate, ISendEmailHelper sendEmailHelper)
         {
             _actionTemplate = actionTemplate;
             _sendEmailHelper = sendEmailHelper;
@@ -33,7 +36,7 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
         {
             var employee = JsonConverter.ConvertFromJson<EmployeeDto>(messageQueue.SourceRawJson);
             // TODO: introduce a template
-            var message = $"Happy birthday {employee.Name}, {employee.LastName}";
+            var message = $"Welcome to iOCO {employee.Name}, {employee.LastName}, we are so proud to have you on board";
 
             var sendEmail = await _sendEmailHelper.SendEmailAsync("khomotso.tsiri@ioco.tech", message,
                 "Birthday Wishes", true, false);

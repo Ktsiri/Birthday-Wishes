@@ -1,23 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using BirthdayWishes.Common.Services;
+﻿using BirthdayWishes.Common.Services;
 using BirthdayWishes.Contract.DomainLogic.Functions.ActionImplementation;
-using BirthdayWishes.Contract.DomainLogic.Retreivers;
 using BirthdayWishes.DomainObjects;
 using BirthdayWishes.Dto;
 using BirthdayWishes.Dto.Enumerations;
+using System;
+using System.Threading.Tasks;
 
-namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageStatus
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.QueueActions.Failed
 {
     [RegisterClassDependency(typeof(IActionImplementation))]
-    sealed class NewMessageAction : IActionImplementation
+    sealed class BirthdayMessageFailedAction : IActionImplementation
     {
         private readonly IActionTemplate _actionTemplate;
         private readonly IActionRetriever _actionRetriever;
-        public byte ActionId => (byte)MessageStatusEnum.New;
-        public NewMessageAction(IActionTemplate actionTemplate, IActionRetriever actionRetriever)
+
+        public byte MessageStatusId => (byte)MessageStatusEnum.Failed;
+
+        public byte? MessageTypeId => (byte)MessageTypeEnum.Birthday;
+
+        public BirthdayMessageFailedAction(IActionTemplate actionTemplate, IActionRetriever actionRetriever)
         {
             _actionTemplate = actionTemplate;
             _actionRetriever = actionRetriever;
@@ -29,7 +30,7 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageStatu
 
         private async Task<Tuple<ResponseMessageDto, MessageQueue>> Action(MessageQueue messageQueue)
         {
-            var action = _actionRetriever.GetAction((byte)messageQueue.MessageType);
+            var action = _actionRetriever.GetAction((byte)MessageStatusEnum.New, (byte)messageQueue.MessageType);
             var actionResults = await action.PerformAction(messageQueue);
 
             messageQueue.MessageStatus = actionResults.Item1.Success ? MessageStatusEnum.Sent : MessageStatusEnum.Failed;

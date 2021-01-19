@@ -8,12 +8,15 @@ using BirthdayWishes.DomainObjects;
 using BirthdayWishes.Dto;
 using BirthdayWishes.Dto.Enumerations;
 
-namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.MessageType
+namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.QueueActions.New
 {
     [RegisterClassDependency(typeof(IActionImplementation))]
-    public class AnniversaryMessageTypeAction : IActionImplementation
+    public class EndingWorkMessageTypAction : IActionImplementation
     {
-        public byte ActionId => (byte) MessageTypeEnum.Anniversary;
+        public byte MessageStatusId => (byte)MessageStatusEnum.New;
+
+        public byte? MessageTypeId => (byte) MessageTypeEnum.EndingWork;
+
         public Task<Tuple<ResponseMessageDto, MessageQueue>> PerformAction(MessageQueue messageQueue)
         {
             throw new NotImplementedException();

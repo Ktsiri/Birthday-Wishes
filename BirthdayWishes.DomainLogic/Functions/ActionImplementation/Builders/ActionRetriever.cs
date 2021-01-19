@@ -18,7 +18,7 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
             _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
         }
 
-        public IActionImplementation GetAction(byte actionId)
+        public IActionImplementation GetAction(byte messageStatusId, byte? messageTypeId)
         {
             var types = ReflectionHelper.GetTypes<IActionImplementation>();
 
@@ -26,8 +26,9 @@ namespace BirthdayWishes.DomainLogic.Functions.ActionImplementation.Builders
                 into constructor let parameters = constructor.GetParameters()
                     .Select(x => _serviceProvider.GetService(x.ParameterType))
                     .ToArray() select constructor.Invoke(parameters) 
-                into method where ((IActionImplementation) method).ActionId == actionId 
-                select method).Cast<IActionImplementation>().FirstOrDefault();
+                into method where ((IActionImplementation) method).MessageStatusId == messageStatusId &&
+                ((IActionImplementation)method)?.MessageTypeId == messageTypeId
+                    select method).Cast<IActionImplementation>().FirstOrDefault();
         }
     }
 }

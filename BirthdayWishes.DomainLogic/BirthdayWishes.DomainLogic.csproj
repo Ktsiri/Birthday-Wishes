@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Functions\ActionImplementation\QueueActions\Sent\" />
     <Folder Include="Retreivers\" />
   </ItemGroup>
 
