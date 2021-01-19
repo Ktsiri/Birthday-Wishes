@@ -41,8 +41,7 @@ namespace BirthdayWishes.EntityFramework
 
             contextOptionsBuilder
                 .UseSqlServer(connectionString,
-                    o => o.EnableRetryOnFailure(3))
-                .ConfigureWarnings(w => w.Throw(CoreEventId.IncludeIgnoredWarning));
+                    o => o.EnableRetryOnFailure(3));
         }
     }
 }

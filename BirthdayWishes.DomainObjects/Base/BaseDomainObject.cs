@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BirthdayWishes.DomainObjects.Base
+﻿namespace BirthdayWishes.DomainObjects.Base
 {
     public abstract class BaseDomainObject<TIdentity> : DomainObject
     {
