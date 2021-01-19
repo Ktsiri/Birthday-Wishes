@@ -40,43 +40,41 @@ namespace BirthdayWishes.DomainLogic.UseCases
                 {
                     return;
                 }
-                var tasks = messageQueues.Select(message => Task.Run(async () =>
-                {
-                    while (message.IsBusyProcessing)
-                    {
-                        try
-                        {
-                            if (await _employeeExclusionRequest.IsEmployeeExcludedForCommunication(message.SystemUniqueId, cancellationToken))
-                            {
-                                continue;
-                            }
-                            var action = _actionRetriever.GetAction((byte)message.MessageStatus);
-                            var actionResults = await action.PerformAction(message);
 
-                            if (actionResults.Item1.Success)
-                            {
-                                await _messageQueueRepository.Update(actionResults.Item2);
-                            }
-                            else 
-                            {
-                                message.RetryCount++;
-                            }
-                        }
-                        catch (Exception ex)
+                foreach (var queue in messageQueues)
+                {
+                    try
+                    {
+                        if (await _employeeExclusionRequest.IsEmployeeExcludedForCommunication(queue.SystemUniqueId, cancellationToken))
                         {
-                            // TODO: log an exception
+                            continue;
                         }
-                        finally
+                        var action = _actionRetriever.GetAction((byte)queue.MessageStatus);
+                        var actionResults = await action.PerformAction(queue);
+
+                        if (actionResults.Item1.Success)
                         {
-                            // revert the IsBusyProcessing column back to false - else they won't be picked up again by the next job.
-                            message.IsBusyProcessing = false;
-                            message.UpdatedDate = DateTime.UtcNow;
-                            await _messageQueueRepository.Update(message);
+                            await _messageQueueRepository.Update(actionResults.Item2);
+                        }
+                        else
+                        {
+                            actionResults.Item2.RetryCount++;
+
+                            await _messageQueueRepository.Update(actionResults.Item2);
                         }
                     }
-                }, cancellationToken))
-                    .ToList();
-                await Task.WhenAll(tasks);
+                    catch (Exception ex)
+                    {
+                        // TODO: log an exception
+                    }
+                    finally
+                    {
+                        // revert the IsBusyProcessing column back to false - else they won't be picked up again by the next job.
+                        queue.IsBusyProcessing = false;
+                        queue.UpdatedDate = DateTime.UtcNow;
+                        await _messageQueueRepository.Update(queue);
+                    }
+                }
             }, cancellationToken: cancellationToken);
         }
     }

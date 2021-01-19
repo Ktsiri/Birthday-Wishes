@@ -33,9 +33,9 @@ namespace BirthdayWishes.ApiClient.Requests
 
             _restfulServiceAssistant.CreateClient(token);
 
-            var result = await _restfulServiceAssistant.GetAsync<List<EmployeeDto>>(_settings.Value.RelativePathSettings.BirthdayWishExclusions);
+            var result = await _restfulServiceAssistant.GetAsync<List<string>>(_settings.Value.RelativePathSettings.BirthdayWishExclusions);
 
-            return result.Select(x => x.Id).Contains(employeeId);
+            return result.Contains(employeeId);
         }
     }
 }

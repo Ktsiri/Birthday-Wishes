@@ -48,7 +48,7 @@ namespace BirthdayWishes.EntityFramework.Repositories
         {
             var commaSeparatedMessageStatuses = string.Join(',', messageStatuses);
 
-            FormattableString sqlQuery = $" ";
+            FormattableString sqlQuery = $"SELECT TOP ({limit}) * FROM [BirthdayWishes].[dbo].[MessageQueue] bw WITH (XLOCK) WHERE bw.IsBusyProcessing = 0 AND (bw.MessageStatus in ({commaSeparatedMessageStatuses})) ORDER BY bw.MessageType, bw.CreatedDate asc";
 
             var records = _context.Set<MessageQueue>().FromSqlInterpolated(sqlQuery).ToList();
 
