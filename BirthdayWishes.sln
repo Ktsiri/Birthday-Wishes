@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayWishes.DependencyIn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{58377FE2-9B4A-4866-BA07-A66227ACA97C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayWishes.DomainLogic.Test", "BirthdayWishes.DomainLogic.Test\BirthdayWishes.DomainLogic.Test.csproj", "{8BE3FFC0-10D8-4B68-9638-A31164A6062E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE3FFC0-10D8-4B68-9638-A31164A6062E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE3FFC0-10D8-4B68-9638-A31164A6062E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE3FFC0-10D8-4B68-9638-A31164A6062E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE3FFC0-10D8-4B68-9638-A31164A6062E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{EBD8F77A-B279-4C41-AE6A-69B106BA8C29} = {8CC8A943-5441-4DDD-8FD2-CE107E7E7283}
 		{BC0DABD3-17CE-4A0D-98E4-0B5B12AD5221} = {8CC8A943-5441-4DDD-8FD2-CE107E7E7283}
 		{58377FE2-9B4A-4866-BA07-A66227ACA97C} = {6BCB1A55-92FF-448F-AF1B-DC026609E243}
+		{8BE3FFC0-10D8-4B68-9638-A31164A6062E} = {58377FE2-9B4A-4866-BA07-A66227ACA97C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D00030B-1DE0-4214-85ED-71A2601C9202}
