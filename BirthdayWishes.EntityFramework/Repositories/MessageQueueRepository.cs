@@ -34,7 +34,10 @@ namespace BirthdayWishes.EntityFramework.Repositories
                 try
                 {
                     await action();
-                    transaction.Commit();
+                    if(transaction != null)
+                    {
+                        transaction.Commit();
+                    }    
 
                 }
                 catch (Exception ex)
