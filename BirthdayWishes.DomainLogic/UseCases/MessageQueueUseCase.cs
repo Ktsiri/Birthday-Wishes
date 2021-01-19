@@ -29,7 +29,7 @@ namespace BirthdayWishes.DomainLogic.UseCases
             _employeeExclusionRequest = employeeExclusionRequest;
         }
 
-        public async Task ProcessBaseQueue(List<byte> messageStatuses,
+        public async Task ExecuteQueue(List<byte> messageStatuses,
             int limit = 30, CancellationToken cancellationToken = default)
         {
             await _messageQueueRepository.ExecuteTransactions(action: async () =>

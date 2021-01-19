@@ -38,7 +38,7 @@ namespace BirthdayWishes.EntityFramework.Configurations
                 .HasColumnType("datetime");
 
             EntityBuilder.Property(x => x.UpdatedDate)
-                .IsRequired()
+                .IsRequired(false)
                 .HasColumnType("datetime");
         }
     }

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BirthdayWishes.EntityFramework.Migrations
 {
     [DbContext(typeof(DomainContext))]
-    [Migration("20210119193917_Initial")]
+    [Migration("20210119200247_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,6 @@ namespace BirthdayWishes.EntityFramework.Migrations
                         .HasDefaultValue("True");
 
                     b.Property<DateTime?>("UpdatedDate")
-                        .IsRequired()
                         .HasColumnType("datetime");
 
                     b.HasKey("Id");

@@ -13,4 +13,8 @@
     <ProjectReference Include="..\BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

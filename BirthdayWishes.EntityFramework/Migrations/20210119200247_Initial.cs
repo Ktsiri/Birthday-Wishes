@@ -23,7 +23,7 @@ namespace BirthdayWishes.EntityFramework.Migrations
                     MessageStatus = table.Column<byte>(type: "tinyint", nullable: false),
                     MessageType = table.Column<byte>(type: "tinyint", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime", nullable: false)
+                    UpdatedDate = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {

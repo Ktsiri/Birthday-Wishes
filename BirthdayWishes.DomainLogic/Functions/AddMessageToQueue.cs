@@ -42,6 +42,7 @@ namespace BirthdayWishes.DomainLogic.Functions
 
                 var message = new MessageQueue
                 {
+                    Id = Guid.NewGuid(),
                     SystemUniqueId = employee.Id,
                     SourceRawJson = JsonConverter.ConvertToJson(employee),
                     IsBusyProcessing = false,

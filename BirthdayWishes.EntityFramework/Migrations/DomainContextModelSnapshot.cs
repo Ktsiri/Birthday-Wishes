@@ -52,7 +52,6 @@ namespace BirthdayWishes.EntityFramework.Migrations
                         .HasDefaultValue("True");
 
                     b.Property<DateTime?>("UpdatedDate")
-                        .IsRequired()
                         .HasColumnType("datetime");
 
                     b.HasKey("Id");
