@@ -12,8 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BirthdayWishes.ApiClient\BirthdayWishes.ApiClient.csproj" />
     <ProjectReference Include="..\BirthdayWishes.Common\BirthdayWishes.Common.csproj" />
     <ProjectReference Include="..\BirthdayWishes.Contract\BirthdayWishes.Contract.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.DomainLogic\BirthdayWishes.DomainLogic.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.EmailClient\BirthdayWishes.SmtpClient.csproj" />
+    <ProjectReference Include="..\BirthdayWishes.EntityFramework\BirthdayWishes.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

@@ -30,17 +30,6 @@ namespace BirthdayWishes.DependencyInjection
             registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.DependencyInjection"));
             registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.EntityFramework"));
             registerClass.RegisterClasses(Assembly.Load("BirthdayWishes.SmtpClient"));
-            //var referencedAssemblies = Assembly.Load("IOCO.BirthdayWishes.DependencyInjection").GetReferencedAssemblies();
-
-            //var assemblyNames = (from assembly in referencedAssemblies
-            //                     let filterAssembly = assembly.Name.Contains("IOCO.")
-            //                     where filterAssembly
-            //                     select assembly).ToList();
-
-            //foreach (var assemblyName in assemblyNames)
-            //{
-            //    registerClass.RegisterClasses(Assembly.Load(assemblyName));
-            //}
 
             ConfigureServices(registerClass);
 
