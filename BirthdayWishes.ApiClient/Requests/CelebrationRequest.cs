@@ -35,7 +35,8 @@ namespace BirthdayWishes.ApiClient.Requests
 
             var result = await _restfulServiceAssistant.GetAsync<List<EmployeeDto>>(_settings.Value.RelativePathSettings.Employees);
 
-            return result.Where(x => x.DateOfBirth.Date == date.Date && x.EmploymentEndDate == null).ToList();
+            return result.Where(x => (x.DateOfBirth.Date.Day == date.Date.Day &&
+            x.DateOfBirth.Date.Month == date.Date.Month) && x.EmploymentEndDate == null).ToList();
         }
         public async Task<List<EmployeeDto>> GetEmployeeStartingWorkToday(DateTime date, CancellationToken cancellationToken = default)
         {
